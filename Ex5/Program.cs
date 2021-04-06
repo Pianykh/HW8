@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 /*
 5.Реализовать функции изменения для ссылочных типов внутри значимых типов.
@@ -10,6 +11,9 @@ namespace Ex5
     {
         private static void Main()
         {
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+
             var car = new Car {IsStarted = false, Color = "red", Passenger = new Passenger()};
 
             Console.WriteLine($"{car.IsStarted}, {car.Color}, {car.Passenger.Name}");

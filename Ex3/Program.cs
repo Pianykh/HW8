@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 /*
 3.Реализовать функции изменения значимых и ссылочных типов данных.
@@ -10,6 +11,9 @@ namespace Ex3
     {
         private static void Main()
         {
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+
             var k = "string";  
 
             Console.WriteLine(k);

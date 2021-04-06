@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Text;
 
 /*
 4.Реализовать функции изменения значимых и ссылочных типов данных для составных типов.
@@ -12,6 +13,9 @@ namespace Ex4
     {
         private static void Main()
         {
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+
             var carAsStruct = new CarAsStruct{IsStarted = false, Color = "red"};
 
             Console.WriteLine($"{carAsStruct.IsStarted}, {carAsStruct.Color}");

@@ -7,12 +7,18 @@
 Стартовый набор товаров должен быть не менее 10.
 */
 
+using System;
+using System.Text;
+
 namespace Ex1
 {
     internal static class Program
     {
         private static void Main()
         {
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+
             Controller.ShowMenu();
         }
     }
